@@ -13,6 +13,9 @@ router.get("/index.js", (req, res)=>{
     res.sendFile(`${__dirname}/index.js`)
 })
 
-
+router.post("/", (req, res)=>{
+    console.log(req.body);
+    res.send("dine")
+})
 
 module.exports = router

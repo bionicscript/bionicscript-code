@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bionic Reading Using Bionic Script Generator Online For ADHD</title>
+    <title>Bionic Reading : Bionic Reading Converter </title>
+    <link rel="stylesheet" href="./index.css">  
+    <meta name="description" content="Bionic Reading is the new way for fast ready and make the reading much more convient for everyone using this bionic reading tool to convert plan text to bionic text online for free">
+    <script src="./server.js"></script>
+    <link rel="shortcut icon" href="/assets/bionic-script-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<p>
-    Bionic reading refers to the use of technology to enhance one’s reading experience. The term “bionic” comes from the combination of the words “biological” and “electronic”, which highlights the integration of technology and the human brain. Bionic reading is a relatively new concept, but it has the potential to revolutionize the way we read, learn, and comprehend information.
 
-</p>
-<p>
-One of the primary benefits of bionic reading is the ability to customize the reading experience to suit individual needs. With the help of technology, readers can adjust the font size, style, and background color to make reading more comfortable. This is especially important for people with visual impairments who may have difficulty reading printed materials. Additionally, bionic reading can be used to enhance focus and concentration. Tools such as noise-cancelling headphones, distraction-blocking software, and even brainwave monitoring devices can help readers stay engaged and focused on the task at hand.
+    <header>
+        <span class="site-title">
+            <img src="/assets/bionic-script-logo.png" alt="" srcset="">
+            <span><b>Bio</b>nic<span><b>Scr</b>ipt</span></span>
+        </span>
+        <span class="options">
+            <button>Download</button>
+        </span>
+    </header>
+    <form action="/bionic" method="post">
 
-</p>
-<p>
-Another benefit of bionic reading is the ability to improve reading speed and comprehension. Tools such as speed-reading software, which displays words at a faster rate than traditional reading, can help readers consume more information in less time. Additionally, tools such as digital dictionaries and online encyclopedias can help readers quickly look up unfamiliar words or concepts. This can lead to a deeper understanding of the material and better retention of information.
+        <div class="main-body">
+            <div class="title-field-container">
+                <h1>
+                    Title
+                </h1>
+                <input type="text" name="title" id="title" placeholder="Paste tttle for text (Optional)" maxlength="200"
+                    min="1">
+            </div>
+            <div class="textarea-conatiner">
+                <h3>
+                    Body
+                </h3>
+                <textarea name="text" id="plaintext"
+                    placeholder="Paste plain text here that you want to convert to bionic script"
+                    maxlength="50000"></textarea>
+            </div>
 
-</p>
-<p>
-Bionic reading can also be used to facilitate collaborative learning. With the use of online discussion forums and social media platforms, readers can share their thoughts and ideas with others who are reading the same material. This can lead to a richer and more diverse learning experience, as readers are exposed to a variety of perspectives and opinions.
+            <div class="description-conatiner">
+                <h5>
+                    Description
+                </h5>
+                <textarea name="description" id="plaintext" placeholder="Paste plain" maxlength="500"></textarea>
+            </div>
+        </div>
+        <div class="form-option-button">
+            <button class="form-reset-button" type="reset">Clear</button>
+            <button class="form-submit-button" type="submit"><span class="fa fa-gear"> </span> Convert </button>
+        </div>
+    </form>
 
-</p>
-<p>
-However, there are also some concerns associated with bionic reading. One concern is the potential for technology to become a distraction. With the multitude of apps and notifications available on smartphones and other devices, it can be easy to become sidetracked and lose focus while reading. Additionally, some people may become overly reliant on technology and may have difficulty reading without it.
+</body>
 
-</p>
-<p>
-In conclusion, bionic reading has the potential to enhance the way we read, learn, and comprehend information. By using technology to customize the reading experience, improve reading speed and comprehension, and facilitate collaborative learning, bionic reading can help readers become more efficient and effective learners. However, it is important to be aware of the potential for technology to become a distraction and to use it judiciously. By striking a balance between technology and traditional reading methods, we can make the most of the benefits of bionic reading while avoiding its potential pitfalls.
-
-</p></body>
 </html>
