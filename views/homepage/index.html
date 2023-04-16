@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./index.css">
     <meta name="description"
         content="Bionic Reading converter helps you in bionic reading which is a new way to fast ready and makes reading much more convenient for everyone using this bionic reading tool to convert plain text to bionic text online for free">
-    <script src="./server.js"></script>
     <link rel="icon" href="/assets/bionic-script-logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -25,7 +24,7 @@
             <button>Download</button>
         </span>
     </header>
- 
+
     <form action="/bionic" method="post">
         <div class="card-continer">
             <div class="title-field-container">
@@ -56,10 +55,10 @@
                 <button class="form-submit-button" type="submit"><span class="fa fa-gear"> </span> Process </button>
             </div>
         </div>
-      
+
     </form>
-    <form action="/wikipedia" method="post">
-        <div class="card-continer">
+    <div class="card-continer wikipedia-container">
+        <form action="/wikipedia" method="post">
             <div class="wikipedia-search-container">
                 <img src="/assets/wikipedia-icon.png" class="wikipedia-icon" alt="">
                 <input type="text" id="wikipedia-search" maxlength="100" placeholder="Search wikipedia for article"
@@ -69,8 +68,14 @@
                     Search
                 </button>
             </div>
+        </form>
+        <div class="wikipedia-autocomplete-container" id="wikipedia-autocomplete-container">
+         
+            
         </div>
-    </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
