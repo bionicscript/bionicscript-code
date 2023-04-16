@@ -73,7 +73,7 @@ header button{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.card-continer{
+.main-body{
     margin-top: 90px;
     padding: 4px 20px 20px 24px;
     font-family: 'Open Sans', sans-serif;
@@ -111,14 +111,14 @@ textarea::-webkit-scrollbar {
     border-radius: 4px;
   }
 
-  .card-continer h1{
+  .main-body h1{
     font-family: 'Cinzel Decorative', cursive;
     font-size: 22px;
     margin: 20px 0px 7px 7px;
   }
   
 
-  .card-continer input{
+  .main-body input{
     width: 100%;
     margin-top: 8px;
     display: block;
@@ -134,14 +134,14 @@ textarea::-webkit-scrollbar {
     border-radius: 10px;
   }
 
-  .card-continer h3{
+  .main-body h3{
     font-family: 'Cinzel Decorative', cursive;
     font-size: 16px;
     margin: 20px 0px 7px 10px;
   }
 
 
-  .card-continer h5{
+  .main-body h5{
     font-family: 'Cinzel Decorative', cursive;
     font-size: 13px;
     margin: 20px 0px 7px 10px;
@@ -172,7 +172,11 @@ textarea::-webkit-scrollbar {
 }
 
 
-
+.form-option-button{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
 
 
 
@@ -202,7 +206,7 @@ textarea::-webkit-scrollbar {
 
 .form-option-button {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     box-sizing: border-box;
     margin-top: 25px;
@@ -214,70 +218,6 @@ textarea::-webkit-scrollbar {
  display: inline-block;
  margin: 0px 4px 0px 0px;
 }
-
-
-
-
-
-.wikipedia-search-container .wikipedia-icon{
-    width: 32px;
-    height: 32px;
-}
-
-.wikipedia-search-container button{
-    border: 2px solid black;
-    padding: 11px 15px;
-    background: black;
-    color: white;
-    font-weight: 800;
-    border-radius: 16px;
-    font-size: 11px;
-    box-shadow: rgb(173 173 173 / 83%) 1px 1px 11px 0px;
-    letter-spacing: 1px;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-
-.wikipedia-search-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-.wikipedia-search-container input{
-    width: calc(100% - 158px);
-    height: 45px;
-    margin: 15px;
-    border-radius: 85px;
-}
-
-.wikipedia-search-result-card{
-    width: 90px;
-    height: 90px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 600px) {

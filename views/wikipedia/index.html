@@ -25,9 +25,18 @@
             <button>Download</button>
         </span>
     </header>
- 
+    <div class="main-body wikipedia-search-container">
+  <form action="" method="post">
+    <img src="/assets/wikipedia-icon.png" class="wikipedia-icon" alt="">
+    <input type="text" id="wikipedia-search" name="wikipedia-search">
+    <button type="submit">
+    Search
+    </button>
+  </form>
+    </div>
+    <hr>
     <form action="/bionic" method="post">
-        <div class="card-continer">
+        <div class="main-body">
             <div class="title-field-container">
                 <h1>
                     Title
@@ -51,26 +60,13 @@
                     placeholder="Please provide a brief description of your content here. (optional)"
                     maxlength="500"></textarea>
             </div>
-            <div class="form-option-button">
-                <button class="form-reset-button" type="reset">Clear</button>
-                <button class="form-submit-button" type="submit"><span class="fa fa-gear"> </span> Process </button>
-            </div>
         </div>
-      
-    </form>
-    <form action="/wikipedia" method="post">
-        <div class="card-continer">
-            <div class="wikipedia-search-container">
-                <img src="/assets/wikipedia-icon.png" class="wikipedia-icon" alt="">
-                <input type="text" id="wikipedia-search" maxlength="100" placeholder="Search wikipedia for article"
-                    name="wikipedia-search">
-                <button type="button">
-                    <span class="fa fa-search"></span>
-                    Search
-                </button>
-            </div>
+        <div class="form-option-button">
+            <button class="form-reset-button" type="reset">Clear</button>
+            <button class="form-submit-button" type="submit"><span class="fa fa-gear"> </span> Convert </button>
         </div>
     </form>
+
 </body>
 
 </html>
