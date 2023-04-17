@@ -8,9 +8,9 @@ router.get("/autocomplete", (req, res)=>{
         let suuggestionKeywords = ``
         suggestions.forEach((value)=>{
             suuggestionKeywords = suuggestionKeywords + `
-            <span class="wikipedia-suggestion">
+            <div class="wikipedia-suggestion">
             ${value}
-           </span>  
+           </div>  
             `
         })
 
