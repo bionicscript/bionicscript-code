@@ -12,7 +12,7 @@ span {
 
 }
 
-body {
+.all-content-container {
     width: 70vw;
     min-height: 100vh;
     display: flex;
@@ -24,10 +24,10 @@ body {
 }
 
 input::placeholder {
-    columns: rgb(49, 49, 49);
+    color: black;
 }
 
-body::-webkit-scrollbar {
+.all-content-container::-webkit-scrollbar {
     display: none;
 }
 
@@ -47,6 +47,7 @@ header {
     background-color: #ffffff6e;
     border-bottom: 3px solid #e3e3e373;
     backdrop-filter: blur(5px);
+    border-radius: 0px 0px 15px 15px;
 
 }
 
@@ -59,6 +60,7 @@ header .site-title {
 header .site-title img {
     display: inline-block;
     margin-right: 13px;
+    margin-left: 15px;
     width: 40px;
     height: 40px;
     border-radius: 10px;
@@ -99,6 +101,8 @@ textarea {
     resize: none;
     padding: 26px 15px 26px 24px;
     border: none;
+    color: black;
+
     font-size: 14px;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -138,6 +142,8 @@ textarea::-webkit-scrollbar-thumb {
     border: none;
     font-size: 14px;
     border-radius: 4px;
+    color: black;
+
     margin-bottom: 10px;
 }
 
@@ -167,6 +173,8 @@ textarea::-webkit-scrollbar-thumb {
     width: 100%;
     display: block;
     height: 100px;
+    color: black;
+
     user-select: none;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
@@ -279,7 +287,9 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .wikipedia-search-container input {
-    width: calc(100% - 112px);
+    width: calc(100% - 62px);
+    color: black;
+
     height: 36px;
     border-radius: 4px;
 }
@@ -342,6 +352,20 @@ p {
 }
 
 
+footer{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    height: 50px;
+    background-color: #e2e2e2;
+}
+
+footer p {
+    text-align: 10px;
+    width: 100vw;
+    text-align: center;
+}
 
 
 @media (max-width: 600px) {
@@ -378,8 +402,8 @@ p {
         margin: 0px 8px;
     }
 
-    body {
-        width: 100vw;
+    .all-content-container {
+        width: 95vw;
     }
 
     header {
@@ -399,6 +423,8 @@ p {
         display: flex;
         align-items: center;
         font-size: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+
     }
 
     header .site-title img {
@@ -437,6 +463,8 @@ p {
     }
 
     .card-continer input {
+        color: black;
+
         display: block;
         user-select: none;
         background-color: white;
@@ -452,8 +480,10 @@ p {
     }
 
     .wikipedia-search-container input {
-        width: calc(100% - 87px);
+        width: calc(100% - 50px);
         height: 35px;
+        color: black;
+
         margin: 10px 10px 10px 0px;
     }
 
@@ -464,6 +494,8 @@ p {
     .description-conatiner textarea {
         width: 100%;
         display: block;
+        color: black;
+
         height: 85px;
         user-select: none;
         background-color: white;
@@ -488,6 +520,8 @@ p {
         width: 100%;
         display: block;
         height: 350px;
+        color: black;
+
         user-select: none;
         background-color: white;
         font-family: 'Open Sans', sans-serif;
@@ -568,6 +602,7 @@ p {
 input,
 textarea {
     /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
+    color: black;
 
     box-shadow: rgb(0 0 0 / 15%) 0px 0px 0px 1px;
 }

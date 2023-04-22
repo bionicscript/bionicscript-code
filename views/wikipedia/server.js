@@ -2,6 +2,14 @@ const express = require("express")
 const router = express.Router()
 const wikipedia = require("wikipedia")
 
+router.get("/index.js", (req, res)=>{
+    res.sendFile(`${__dirname}/index.js`)
+})
+
+router.get("/index.css", (req, res)=>{
+    res.sendFile(`${__dirname}/index.css`)
+})
+
 router.get("/autocomplete", (req, res) => {
     wikipedia.default.autocompletions(req.query.query, { limit: 10 }).then((suggestions) => {
         let suuggestionKeywords = ``
@@ -105,16 +113,16 @@ router.get("/", (req, res) => {
             }
 
 
-            if(string == "See" && array[index + 1] == "also"){
+            if (string == "See" && array[index + 1] == "also") {
                 continueCompliling = false
                 return `</p>`
             }
 
-            if(continueCompliling == true){
+            if (continueCompliling == true) {
                 return string
             }
 
-            if(continueCompliling == false){
+            if (continueCompliling == false) {
                 return ``
             }
         })
@@ -129,8 +137,10 @@ router.get("/", (req, res) => {
             html = html + string + " "
         })
 
-        res.send(html)
 
+        res.render(`${__dirname}/index.hbs`, {
+            content: html
+        })
 
 
     }).catch((err) => {

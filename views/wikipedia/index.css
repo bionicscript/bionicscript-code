@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-span{
+span {
     font-family: 'Cinzel Decorative', cursive;
 }
 
-*{
+* {
     padding: 0%;
     margin: 0%;
-    
+
 }
 
-body{
+.all-content-container {
     width: 70vw;
     min-height: 100vh;
     display: flex;
@@ -23,15 +23,19 @@ body{
 
 }
 
-body::-webkit-scrollbar{
+input::placeholder {
+    color: black;
+}
+
+.all-content-container::-webkit-scrollbar {
     display: none;
 }
 
-.main-container{
+.main-container {
     width: 70%;
 }
 
-header{
+header {
     width: 70vw;
     display: flex;
     align-items: center;
@@ -41,61 +45,67 @@ header{
     padding-top: 12px;
     top: 0px;
     background-color: #ffffff6e;
+    border-bottom: 3px solid #e3e3e373;
     backdrop-filter: blur(5px);
-    
+    border-radius: 0px 0px 15px 15px;
+
 }
 
-header .site-title{
+header .site-title {
     display: flex;
     align-items: center;
     font-size: 20px;
 }
 
-header .site-title img{
+header .site-title img {
     display: inline-block;
     margin-right: 13px;
+    margin-left: 15px;
     width: 40px;
     height: 40px;
     border-radius: 10px;
 
 }
 
-header button{
-    border: 2px solid black;
+header button {
+    border: none;
     padding: 9px 20px;
     background: black;
     color: white;
     font-weight: 800;
     border-radius: 4px;
     font-size: 14px;
-    box-shadow: rgb(173 173 173 / 83%) 1px 1px 11px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     letter-spacing: 1px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.main-body{
+.card-continer {
     margin-top: 90px;
-    padding: 4px 20px 20px 24px;
+    padding: 18px 20px 13px 20px;
     font-family: 'Open Sans', sans-serif;
     border-radius: 16px;
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-textarea{
+textarea {
     width: 100%;
     display: block;
     height: 300px;
     user-select: none;
-    background-color: rgb(193 193 193 / 8%);
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
     outline: none;
     box-sizing: border-box;
     resize: none;
     padding: 26px 15px 26px 24px;
     border: none;
+    color: black;
+
     font-size: 14px;
-    border-radius: 17px;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 
@@ -103,27 +113,27 @@ textarea::-webkit-scrollbar {
     width: 4px;
     height: 5px;
     color: black;
-  }
+}
 
-  textarea::-webkit-scrollbar-thumb {
+textarea::-webkit-scrollbar-thumb {
     background-color: black;
     height: 10px;
     border-radius: 4px;
-  }
+}
 
-  .main-body h1{
+.card-continer h1 {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 22px;
     margin: 20px 0px 7px 7px;
-  }
-  
+}
 
-  .main-body input{
+
+.card-continer input {
     width: 100%;
     margin-top: 8px;
     display: block;
     user-select: none;
-    background-color: rgb(193 193 193 / 8%);
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
     outline: none;
     box-sizing: border-box;
@@ -131,36 +141,42 @@ textarea::-webkit-scrollbar {
     padding: 16px 20px;
     border: none;
     font-size: 14px;
-    border-radius: 10px;
-  }
+    border-radius: 4px;
+    color: black;
 
-  .main-body h3{
+    margin-bottom: 10px;
+}
+
+.card-continer h3 {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 16px;
     margin: 20px 0px 7px 10px;
-  }
+}
 
 
-  .main-body h5{
+.card-continer h5 {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 13px;
     margin: 20px 0px 7px 10px;
-  }
+}
 
-  .top-header{
+.top-header {
     width: 100%;
     display: block;
     position: absolute;
-  }
+}
 
 
 
-  .description-conatiner textarea{
+
+.description-conatiner textarea {
     width: 100%;
     display: block;
     height: 100px;
+    color: black;
+
     user-select: none;
-    background-color: rgb(193 193 193 / 8%);
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
     outline: none;
     box-sizing: border-box;
@@ -168,24 +184,20 @@ textarea::-webkit-scrollbar {
     padding: 26px 15px 26px 24px;
     border: none;
     font-size: 14px;
-    border-radius: 17px;
+    border-radius: 4px;
 }
 
 
-.form-option-button{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
+
 
 
 
 .form-option-button button:nth-child(1) {
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
-    background: white;
-    padding: 8px 23px;
-    color: gray;
+    background: #dfdfdf73;
+    padding: 9px 23px;
+    color: #242424;
     border: 2px solid white;
     border-radius: 7px;
     margin-left: 12px;
@@ -197,16 +209,16 @@ textarea::-webkit-scrollbar {
     background: black;
     padding: 8px 23px;
     color: white;
-    border: 2px solid black;
-    box-shadow: rgb(173 173 173 / 83%) 1px 1px 11px 0px;
-    border-radius: 7px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 4px;
     margin-left: 12px;
 }
 
 
 .form-option-button {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     box-sizing: border-box;
     margin-top: 25px;
@@ -215,17 +227,382 @@ textarea::-webkit-scrollbar {
 
 
 .form-option-button .fa-gear {
- display: inline-block;
- margin: 0px 4px 0px 0px;
+    display: inline-block;
+    margin: 0px 4px 0px 0px;
+}
+
+
+
+
+
+.wikipedia-search-container .wikipedia-icon {
+    width: 32px;
+    height: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+.wikipedia-search-container button {
+    border: none;
+    padding: 11px 15px;
+    background: black;
+    color: white;
+    font-weight: 800;
+    border-radius: 4px;
+    font-size: 11px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    letter-spacing: 1px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+.wikipedia-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wikipedia-autocomplete-container {
+    display: block;
+    align-items: center;
+    justify-content: left;
+    overflow-x: scroll;
+    padding: 0px 72px;
+}
+
+.wikipedia-autocomplete-container p {
+    display: block;
+    margin-bottom: 14px;
+    color: #1c1c1c;
+    margin-left: -41px;
+    font-size: 15px;
+
+}
+
+.wikipedia-autocomplete-container p span {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.wikipedia-search-container input {
+    width: calc(100% - 62px);
+    color: black;
+
+    height: 36px;
+    border-radius: 4px;
+}
+
+.wikipedia-search-result-card {
+    width: 90px;
+    height: 90px;
+}
+
+.wikipedia-container {
+    margin-top: 5px;
+}
+
+
+.wikipedia-autocomplete-container::-webkit-scrollbar {
+    display: none;
+}
+
+.wikipedia-autocomplete-container {
+    overflow-x: scroll;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: -18px;
+}
+
+.wikipedia-suggestion-span span {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+}
+
+
+
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 18px 0px 1px;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 19px 10px 0px 0px;
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+p {
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 8px 0px;
+    line-height: 16px;
+    text-align: justify;
+}
+
+
+footer{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    height: 50px;
+    background-color: #e2e2e2;
+}
+
+footer p {
+    text-align: 10px;
+    width: 100vw;
+    text-align: center;
 }
 
 
 @media (max-width: 600px) {
-    
-    body{
-        width: 100vw;
+
+    header span {
+        font-size: 18px;
     }
-    header{
-        width: 100vw;
+
+    .card-continer {
+        margin-top: 60px;
     }
+
+    .wikipedia-autocomplete-container {
+        overflow-x: scroll;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-left: -73px;
+    }
+
+    .wikipedia-autocomplete-container p {
+        display: block;
+        margin-bottom: 14px;
+        color: #1c1c1c;
+        margin-left: -7px;
+        font-size: 15px;
+
+    }
+
+    .wikipedia-container {
+        margin-top: 5px;
+    }
+
+
+    form {
+        margin: 0px 8px;
+    }
+
+    .all-content-container {
+        width: 95vw;
+    }
+
+    header {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 52px;
+        position: fixed;
+        padding-top: 0px;
+        top: 0px;
+        background-color: #ffffff6e;
+        backdrop-filter: blur(5px);
+    }
+
+    header .site-title {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+
+    header .site-title img {
+        display: inline-block;
+        margin-right: 13px;
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+    }
+
+    header button {
+        border: none;
+        padding: 8px 14px;
+        font-size: 11px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        letter-spacing: 1px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .card-continer {
+        padding: 4px 7px 20px 7px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .card-continer h1 {
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 18px;
+        margin: 3px 0px 7px 7px;
+    }
+
+    .card-continer input {
+        color: black;
+
+        display: block;
+        user-select: none;
+        background-color: white;
+        font-family: 'Open Sans', sans-serif;
+        outline: none;
+        box-sizing: border-box;
+        resize: none;
+        padding: 15px 15px;
+        border: none;
+        font-size: 13px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .wikipedia-search-container input {
+        width: calc(100% - 50px);
+        height: 35px;
+        color: black;
+
+        margin: 10px 10px 10px 0px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .description-conatiner textarea {
+        width: 100%;
+        display: block;
+        color: black;
+
+        height: 85px;
+        user-select: none;
+        background-color: white;
+        font-family: 'Open Sans', sans-serif;
+        outline: none;
+        box-sizing: border-box;
+        resize: none;
+        padding: 20px 9px 19px 15px;
+        border: none;
+        font-size: 13px;
+        border-radius: 4px;
+
+    }
+
+    .card-continer h3 {
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 14px;
+        margin: 20px 0px 7px 10px;
+    }
+
+    textarea {
+        width: 100%;
+        display: block;
+        height: 350px;
+        color: black;
+
+        user-select: none;
+        background-color: white;
+        font-family: 'Open Sans', sans-serif;
+        outline: none;
+        box-sizing: border-box;
+        resize: none;
+        padding: 16px 13px 23px 14px;
+        border: none;
+        font-size: 13px;
+        border-radius: 4px;
+        border: none;
+    }
+
+
+    .form-option-button button:nth-child(2) {
+        font-size: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+        background: black;
+        padding: 8px 16px;
+        color: white;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 4px;
+
+
+
+    }
+
+
+    .form-option-button button:nth-child(1) {
+        font-size: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+        background: #dfdfdf73;
+        padding: 9px 23px;
+        color: #242424;
+        border: 2px solid white;
+        border-radius: 7px;
+        margin-left: 12px;
+    }
+
+    .wikipedia-search-container .wikipedia-icon {
+        width: 29px;
+        height: 27px;
+    }
+
+    .wikipedia-search-container button {
+        border: none;
+        padding: 11px 13px;
+        background: black;
+        color: white;
+        font-weight: 800;
+        border-radius: 4px;
+        font-size: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        letter-spacing: 1px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    p {
+        padding: 0px 16px;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-left: 16px;
+    }
+
+    .wikipedia-container {
+        margin-top: 5px;
+        margin: -6px 7px;
+    }
+
+
+}
+
+input,
+textarea {
+    /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
+    color: black;
+
+    box-shadow: rgb(0 0 0 / 15%) 0px 0px 0px 1px;
 }
