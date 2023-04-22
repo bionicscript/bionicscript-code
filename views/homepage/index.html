@@ -29,19 +29,17 @@
         <div class="card-continer">
             <div class="title-field-container">
 
-                <input type="text" name="title" id="title"
-                    placeholder="Title (optional)" maxlength="200" min="1">
+                <input type="text" name="title" id="title" placeholder="Title (optional)" maxlength="200" min="1">
             </div>
             <div class="textarea-conatiner">
 
                 <textarea name="text" id="plaintext" placeholder="Text that you want to convert to bionic"
-                    maxlength="50000"></textarea>
+                    maxlength="50000" required></textarea>
             </div>
 
             <div class="description-conatiner">
 
-                <textarea name="description" id="plaintext"
-                    placeholder="Description (optional)"
+                <textarea name="description" id="plaintext" placeholder="Description (optional)"
                     maxlength="500"></textarea>
             </div>
             <div class="form-option-button">
@@ -55,10 +53,9 @@
     <div class="card-continer wikipedia-container">
         <form action="/wikipedia" method="post">
             <div class="wikipedia-search-container">
-                <img src="/assets/wikipedia-icon.png" class="wikipedia-icon" alt="">
                 <input type="text" id="wikipedia-search" maxlength="100" placeholder="Search wikipedia for article"
                     name="wikipedia-search">
-                <button type="button">
+                <button type="button" onclick="searchWikipedia()">
                     <span class="fa fa-search"></span>
                     Search
                 </button>
@@ -66,8 +63,9 @@
         </form>
         <div class="wikipedia-autocomplete-container" id="wikipedia-autocomplete-container">
 
-
+     
         </div>
+ 
     </div>
     <br>
     <p>
