@@ -45,6 +45,7 @@ header {
     padding-top: 12px;
     top: 0px;
     background-color: #ffffff6e;
+    border-bottom: 3px solid #e3e3e373;
     backdrop-filter: blur(5px);
 
 }
@@ -79,7 +80,7 @@ header button {
 
 .card-continer {
     margin-top: 90px;
-    padding: 4px 20px 20px 24px;
+    padding:18px 20px 13px 20px;
     font-family: 'Open Sans', sans-serif;
     border-radius: 16px;
     box-sizing: border-box;
@@ -160,12 +161,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 
-input,
-textarea {
 
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-
-}
 
 .description-conatiner textarea {
     width: 100%;
@@ -263,7 +259,6 @@ textarea {
     align-items: center;
     justify-content: left;
     overflow-x: scroll;
-    height: 70px;
 }
 
 .wikipedia-search-container input {
@@ -306,8 +301,6 @@ textarea {
     align-items: center;
     justify-content: left;
     overflow-x: scroll;
-    height: 68px;
-    padding: 0px 15px;
     margin-left: -18px;
 }
 
@@ -453,7 +446,7 @@ header {
         resize: none;
         padding: 15px 15px;
         border: none;
-        font-size: 11px;
+        font-size: 13px;
         border-radius: 4px;
         border: none;
     }
@@ -471,7 +464,7 @@ header {
     .description-conatiner textarea {
         width: 100%;
         display: block;
-        height: 70px;
+        height: 85px;
         user-select: none;
         background-color: white;
         font-family: 'Open Sans', sans-serif;
@@ -480,7 +473,7 @@ header {
         resize: none;
         padding: 20px 9px 19px 15px;
         border: none;
-        font-size: 10px;
+        font-size: 13px;
         border-radius: 4px;
 
     }
@@ -494,7 +487,7 @@ header {
     textarea {
         width: 100%;
         display: block;
-        height: 205px;
+        height: 350px;
         user-select: none;
         background-color: white;
         font-family: 'Open Sans', sans-serif;
@@ -503,7 +496,7 @@ header {
         resize: none;
         padding: 16px 13px 23px 14px;
         border: none;
-        font-size: 11px;
+        font-size: 13px;
         border-radius: 4px;
         border: none;
     }
@@ -561,5 +554,17 @@ header {
         margin-left: 16px;
     }
 
+    .wikipedia-container {
+        margin-top: 5px;
+        margin: -6px 7px;
+    }
 
+
+}
+
+input,
+textarea {
+    /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
+
+    box-shadow: rgb(0 0 0 / 15%) 0px 0px 0px 1px;
 }
