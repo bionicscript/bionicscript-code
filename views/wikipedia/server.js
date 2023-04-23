@@ -35,8 +35,35 @@ router.get("/", (req, res) => {
 
     const articleImage = `<img src="${summary.originalimage.source}">`
     const articleHeading = `<h1>${summary.titles.canonical}</h1>`
-    const articleDescription = `<p >${summary.description}</p>`
-    const articleSummary = `<p class='wikipedia-article-summary'>${summary.extract}</p>`
+    
+   var articleDescription = summary.extract.split(" ").map((string) => {
+
+        if (string.length % 2 == 0 && string.includes('<p>') == false && string.includes('</p><h2>') == false && string.includes('</h2><p>') == false && string.includes('<p><h3>') == false && string.includes('</h3><p>') == false && string.includes('</p><h4>') == false && string.includes('</h4><p>') == false && string.includes('</p><h5>') == false && string.includes('</h5><p>') == false  && string.includes('</p>') == false) {
+            var firstPart = string.substring(0, (string.length / 2))
+            var secondPart = string.substring((string.length / 2), string.length)
+    
+            return `<span class="bionic-word"><span class="bioic-bold">${firstPart}</span><span class="bionic-light">${secondPart}</span></span>`
+        }
+    
+        if (string.length % 2 != 0 && string.includes('<p>') == false && string.includes('</p><h2>') == false && string.includes('</h2><p>') == false && string.includes('<p><h3>') == false && string.includes('</h3><p>') == false && string.includes('</p><h4>') == false && string.includes('</h4><p>') == false && string.includes('</p><h5>') == false && string.includes('</h5><p>') == false  && string.includes('</p>') == false) {
+            var firstPart = string.substring(0, Math.floor(string.length / 2) + 1)
+            var secondPart = string.substring(Math.floor(string.length / 2) + 1, string.length)
+            
+            return `<span class="bionic-word"><span class="bioic-bold">${firstPart}</span><span class="bionic-light">${secondPart}</span></span>`
+        }
+
+        return string
+    
+    })
+
+    var bionicdescription = ``
+    articleDescription.forEach((string)=>{
+        bionicdescription = bionicdescription + string + " "
+    })
+
+    articleDescription = `<p >${summary.description}</p>`
+
+    const articleSummary = `<p class='wikipedia-article-summary'>${bionicdescription}</p>`
     const articleIntro =  articleHeading + articleDescription + articleSummary + articleImage
 
 
@@ -131,11 +158,35 @@ router.get("/", (req, res) => {
             }
         })
 
+       finalarray2 = finalarray2.map((string) => {
+
+            if (string.length % 2 == 0 && string.includes('<p>') == false && string.includes('</p><h2>') == false && string.includes('</h2><p>') == false && string.includes('<p><h3>') == false && string.includes('</h3><p>') == false && string.includes('</p><h4>') == false && string.includes('</h4><p>') == false && string.includes('</p><h5>') == false && string.includes('</h5><p>') == false  && string.includes('</p>') == false) {
+                var firstPart = string.substring(0, (string.length / 2))
+                var secondPart = string.substring((string.length / 2), string.length)
+        
+                return `<span class="bionic-word"><span class="bioic-bold">${firstPart}</span><span class="bionic-light">${secondPart}</span></span>`
+            }
+        
+            if (string.length % 2 != 0 && string.includes('<p>') == false && string.includes('</p><h2>') == false && string.includes('</h2><p>') == false && string.includes('<p><h3>') == false && string.includes('</h3><p>') == false && string.includes('</p><h4>') == false && string.includes('</h4><p>') == false && string.includes('</p><h5>') == false && string.includes('</h5><p>') == false  && string.includes('</p>') == false) {
+                var firstPart = string.substring(0, Math.floor(string.length / 2) + 1)
+                var secondPart = string.substring(Math.floor(string.length / 2) + 1, string.length)
+                
+                return `<span class="bionic-word"><span class="bioic-bold">${firstPart}</span><span class="bionic-light">${secondPart}</span></span>`
+            }
+
+            return string
+        
+        })
+        
+
+
         var html = ''
 
         finalarray2.forEach((string) => {
             html = html + string + " "
+
         })
+
 
         res.render(`${__dirname}/index.hbs`, {
             title: summary.titles.normalized + " | Bionic Text",

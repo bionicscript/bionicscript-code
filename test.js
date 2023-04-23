@@ -7,3 +7,12 @@ wikipedia.default.summary("google").then((summary)=>{
 }).catch((err)=>{
     console.log(err);
 })
+
+
+
+// var summary = "niced"
+
+// summary
+
+
+// console.log(Math.floor(5 / 2));
