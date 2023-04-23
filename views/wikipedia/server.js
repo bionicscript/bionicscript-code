@@ -34,7 +34,7 @@ router.get("/", (req, res) => {
   wikipedia.default.summary(req.query.search).then((summary)=>{
 
     const articleImage = `<img src="${summary.originalimage.source}">`
-    const articleHeading = `<h1>${summary.titles.canonical}</h1>`
+    const articleHeading = `<h1>${summary.titles.normalized}</h1>`
     
    var articleDescription = summary.extract.split(" ").map((string) => {
 

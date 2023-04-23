@@ -86,7 +86,7 @@ header button {
 
 
 .wiki-main-container {
-    margin-top: 82px;
+    margin-top: 100px;
 }
 
 
@@ -355,10 +355,11 @@ p {
     text-align: justify;
 }
 
-h3, h4, h5{
+h2, h3, h4, h5 {
     margin-top: 25px;
     font-family: 'Josefin Sans', sans-serif;
-    
+    border-left: 2px solid;
+    padding-left: 10px;
 }
 
 footer {
@@ -444,7 +445,7 @@ footer p {
     border-radius: 6px;
     margin-top: 10px;
     margin-bottom: 10px;
-
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
 }
 
@@ -602,7 +603,12 @@ footer p {
 
     .card-continer input {
         color: black;
-
+        width: calc(100% - 72px);
+        height: 43px;
+        color: black;
+        margin: 10px 10px 10px 0px;
+        border-radius: 4px 0px 0px 4px;
+        font-weight: 700;
         display: block;
         user-select: none;
         background-color: white;
@@ -703,11 +709,11 @@ footer p {
 
     .wikipedia-search-container button {
         border: none;
-        padding: 11px 13px;
+        padding: 16px 23px;
         background: black;
         color: white;
         font-weight: 800;
-        border-radius: 4px;
+        border-radius: 0px 4px 4px 0px;
         font-size: 10px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         letter-spacing: 1px;
@@ -737,11 +743,12 @@ footer p {
     }
 
     .wikipedia-search-container input {
-        width: calc(100% - 72px);
-        height: 35px;
+        width: calc(100% - 67px);
+        height: 44px;
         color: black;
-
-        margin: 10px 10px 10px 0px;
+        margin: 10px 0px 10px 0px;
+        border-radius: 4px 0px 0px 4px;
+        font-weight: 700;
     }
 
 }
