@@ -9,7 +9,7 @@ span {
 * {
     padding: 0%;
     margin: 0%;
-    box-sizing: border-box;
+    box-sizing: border-Fbox;
 
 }
 
@@ -111,7 +111,7 @@ textarea {
     resize: none;
     padding: 26px 15px 26px 24px;
     border: none;
-    color: black;
+    color: rgb(67, 67, 67);
 
     font-size: 14px;
     border-radius: 4px;
@@ -153,7 +153,7 @@ textarea::-webkit-scrollbar-thumb {
     border: none;
     font-size: 14px;
     border-radius: 4px;
-    color: black;
+    color: rgb(67, 67, 67);
     width: calc(100% - 15px);
 
     margin-bottom: 10px;
@@ -184,7 +184,7 @@ textarea::-webkit-scrollbar-thumb {
 .description-conatiner textarea {
     display: block;
     height: 100px;
-    color: black;
+    color: rgb(67, 67, 67);
 
     user-select: none;
     background-color: white;
@@ -210,6 +210,8 @@ textarea::-webkit-scrollbar-thumb {
     font-family: 'Josefin Sans', sans-serif;
     background: #dfdfdf73;
     padding: 9px 23px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
     color: #242424;
     border: 2px solid white;
     border-radius: 7px;
@@ -218,6 +220,8 @@ textarea::-webkit-scrollbar-thumb {
 
 .form-option-button button:nth-child(2) {
     font-size: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
     font-family: 'Josefin Sans', sans-serif;
     background: black;
     padding: 8px 23px;
@@ -265,9 +269,10 @@ textarea::-webkit-scrollbar-thumb {
     border-radius: 0px 4px 4px 0px;
     margin-right: 35px;
     font-size: 14px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     letter-spacing: 1px;
     font-family: 'Josefin Sans', sans-serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
     margin-left: -47px;
 }
 
@@ -384,7 +389,7 @@ footer p {
 
 .wikipedia-search-container input {
     width: calc(100% - 117px);
-    color: black;
+    color: rgb(67, 67, 67);
     height: 51px;
     border-radius: 4px 0px 0px 4px;
     font-weight: 700;
@@ -445,7 +450,22 @@ footer p {
     margin-top: 34px;
 }
 
+
+.text-to-bionic-image {
+    display: block;
+    margin: 15px auto 35px auto;
+    width: 84px;
+    object-fit: cover;
+}
+
 @media (max-width: 600px) {
+
+    .text-to-bionic-image {
+        display: block;
+        margin: 15px auto 35px auto;
+        width: 64px;
+        object-fit: cover;
+    }
 
     .intro-text-top img {
         width: 68px;
@@ -562,7 +582,7 @@ footer p {
     }
 
     .card-continer input {
-        color: black;
+        color: rgb(67, 67, 67);
 
         display: block;
         user-select: none;
@@ -587,7 +607,7 @@ footer p {
 
     .description-conatiner textarea {
         display: block;
-        color: black;
+        color: rgb(67, 67, 67);
 
         height: 85px;
         user-select: none;
@@ -615,7 +635,7 @@ footer p {
         width: 100%;
         display: block;
         height: 250px;
-        color: black;
+        color: rgb(67, 67, 67);
 
         user-select: none;
         background-color: white;
@@ -697,7 +717,7 @@ footer p {
     .wikipedia-search-container input {
         width: calc(100% - 67px);
         height: 44px;
-        color: black;
+        color: rgb(67, 67, 67);
         margin: 10px 0px 10px 0px;
         border-radius: 4px 0px 0px 4px;
         font-weight: 700;
@@ -708,10 +728,15 @@ footer p {
 input,
 textarea {
     /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
-    color: black;
+    color: rgb(15, 15, 15);
     width: calc(100% - 15px);
-
+    font-weight: 800;
     border-radius: 20px;
     /* box-shadow: rgb(0 0 0 / 15%) 0px 0px 0px 1px; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+textarea::placeholder{
+    color: black;
+    font-weight: 800;
 }

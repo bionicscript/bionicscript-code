@@ -14,8 +14,15 @@ router.get("/wikipedia-icon.png", (req, res)=>{
     res.sendFile(`${__dirname}/wikipedia-icon.png`)
 })
 
+
 router.get("/bionic-script-backgound-image.webp", (req, res)=>{
     res.sendFile(`${__dirname}/bionic-script-backgound-image.webp`)
+})
+
+
+
+router.get("/bionic-text-icon.png", (req, res)=>{
+    res.sendFile(`${__dirname}/bionic-text-icon.png`)
 })
 
 
