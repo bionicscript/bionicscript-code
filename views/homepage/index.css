@@ -9,6 +9,7 @@ span {
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 
 }
 
@@ -81,12 +82,18 @@ header button {
 }
 
 .card-continer {
-    margin-top: 90px;
-    padding: 18px 20px 13px 20px;
     font-family: 'Open Sans', sans-serif;
     border-radius: 16px;
+    overflow: hidden;
     box-sizing: border-box;
+    text-align: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    padding-bottom: 20px;
+}
+
+input,
+textarea {
+    margin: auto;
 }
 
 textarea {
@@ -106,6 +113,8 @@ textarea {
     font-size: 14px;
     border-radius: 4px;
     margin-bottom: 10px;
+    width: calc(100% - 15px);
+
 }
 
 
@@ -129,7 +138,6 @@ textarea::-webkit-scrollbar-thumb {
 
 
 .card-continer input {
-    width: 100%;
     margin-top: 8px;
     display: block;
     user-select: none;
@@ -143,6 +151,7 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 14px;
     border-radius: 4px;
     color: black;
+    width: calc(100% - 15px);
 
     margin-bottom: 10px;
 }
@@ -170,7 +179,6 @@ textarea::-webkit-scrollbar-thumb {
 
 
 .description-conatiner textarea {
-    width: 100%;
     display: block;
     height: 100px;
     color: black;
@@ -185,6 +193,8 @@ textarea::-webkit-scrollbar-thumb {
     border: none;
     font-size: 14px;
     border-radius: 4px;
+    width: calc(100% - 15px);
+
 }
 
 
@@ -250,6 +260,7 @@ textarea::-webkit-scrollbar-thumb {
     color: white;
     font-weight: 800;
     border-radius: 4px;
+    margin-right: 6px;
     font-size: 11px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     letter-spacing: 1px;
@@ -269,14 +280,15 @@ textarea::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: left;
     overflow-x: scroll;
-    padding: 0px 72px;
+    padding: 0px 5px;
 }
 
 .wikipedia-autocomplete-container p {
     display: block;
     margin-bottom: 14px;
     color: #1c1c1c;
-    margin-left: -41px;
+
+    margin-left: 10px;
     font-size: 15px;
 
 }
@@ -286,13 +298,7 @@ textarea::-webkit-scrollbar-thumb {
     margin-right: 6px;
 }
 
-.wikipedia-search-container input {
-    width: calc(100% - 62px);
-    color: black;
 
-    height: 36px;
-    border-radius: 4px;
-}
 
 .wikipedia-search-result-card {
     width: 90px;
@@ -311,7 +317,6 @@ textarea::-webkit-scrollbar-thumb {
 .wikipedia-autocomplete-container {
     overflow-x: scroll;
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: -18px;
 }
 
 .wikipedia-suggestion-span span {
@@ -352,7 +357,7 @@ p {
 }
 
 
-footer{
+footer {
     margin-top: 5px;
     display: flex;
     align-items: center;
@@ -367,21 +372,113 @@ footer p {
     text-align: center;
 }
 
+.card-container-image {
+    width: 100%;
+    height: 40px;
+    object-fit: cover;
+}
+
+
+.wikipedia-search-container input {
+    width: calc(100% - 62px);
+    color: black;
+    height: 36px;
+    border-radius: 4px;
+}
+
+
+
+
+.intro-text-top {
+    margin-bottom: 5px;
+
+}
+
+.intro-text-top h2 {
+    background-image: linear-gradient(to right, #00f, #f00);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.intro-text-top p {
+    text-align: center;
+}
+
+.card-continer:nth-child(1) {
+    margin-top: 78px;
+}
+
+
+.intro-text-top h2 {
+    background-image: linear-gradient(to right, #0400ff, #e722ff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    font-size: 19px;
+    color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.intro-text-top p {
+    padding: 0px 10px;
+}
+
+.intro-text-top img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.intro-text-top img {
+    width: 94px;
+    height: 94px;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 34px;
+}
 
 @media (max-width: 600px) {
+
+    .intro-text-top img {
+        width: 68px;
+        height: 68px;
+        object-fit: cover;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: -11px;
+    }
+
+    .card-continer:nth-child(1) {
+        margin-top: 59px;
+    }
+
+    .intro-text-top h2 {
+        background-image: linear-gradient(to right, #0400ff, #e722ff);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-align: center;
+        font-size: 19px;
+        color: transparent;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .intro-text-top {
+        margin-top: -8px;
+    }
 
     header span {
         font-size: 18px;
     }
 
-    .card-continer {
-        margin-top: 60px;
-    }
-
     .wikipedia-autocomplete-container {
         overflow-x: scroll;
         font-family: 'Josefin Sans', sans-serif;
-        margin-left: -73px;
+        margin-left: 0px;
     }
 
     .wikipedia-autocomplete-container p {
@@ -403,7 +500,7 @@ footer p {
     }
 
     .all-content-container {
-        width: 95vw;
+        width: 100%;
     }
 
     header {
@@ -444,9 +541,7 @@ footer p {
         font-family: 'Josefin Sans', sans-serif;
     }
 
-    .card-continer {
-        padding: 4px 7px 20px 7px;
-    }
+
 
     h1 {
         font-size: 15px;
@@ -477,22 +572,16 @@ footer p {
         font-size: 13px;
         border-radius: 4px;
         border: none;
+        width: calc(100% - 15px);
+
     }
 
-    .wikipedia-search-container input {
-        width: calc(100% - 50px);
-        height: 35px;
-        color: black;
-
-        margin: 10px 10px 10px 0px;
-    }
 
     h3 {
         font-size: 13px;
     }
 
     .description-conatiner textarea {
-        width: 100%;
         display: block;
         color: black;
 
@@ -507,6 +596,8 @@ footer p {
         border: none;
         font-size: 13px;
         border-radius: 4px;
+        width: calc(100% - 15px);
+
 
     }
 
@@ -519,7 +610,7 @@ footer p {
     textarea {
         width: 100%;
         display: block;
-        height: 350px;
+        height: 250px;
         color: black;
 
         user-select: none;
@@ -578,6 +669,8 @@ footer p {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         letter-spacing: 1px;
         font-family: 'Josefin Sans', sans-serif;
+        margin-left: -31px;
+        margin-right: -4px;
     }
 
     p {
@@ -596,6 +689,13 @@ footer p {
         margin: -6px 7px;
     }
 
+    .wikipedia-search-container input {
+        width: calc(100% - 72px);
+        height: 35px;
+        color: black;
+
+        margin: 10px 10px 10px 0px;
+    }
 
 }
 
@@ -603,6 +703,7 @@ input,
 textarea {
     /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
     color: black;
+    width: calc(100% - 15px);
 
     box-shadow: rgb(0 0 0 / 15%) 0px 0px 0px 1px;
 }
