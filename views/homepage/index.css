@@ -271,8 +271,7 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 14px;
     letter-spacing: 1px;
     font-family: 'Josefin Sans', sans-serif;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
+    box-shadow: rgb(99 99 99 / 65%) 2px 2px 8px 0px;
     margin-left: -47px;
 }
 
@@ -684,13 +683,13 @@ footer p {
 
     .wikipedia-search-container button {
         border: none;
-        padding: 16px 16px;
+        padding: 17px 16px;
         background: black;
         color: white;
         font-weight: 800;
         border-radius: 0px 4px 4px 0px;
         font-size: 10px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        box-shadow: rgb(0 0 0 / 68%) 1px 1px 4px;
         letter-spacing: 1px;
         font-family: 'Josefin Sans', sans-serif;
         margin-left: -31px;
@@ -733,8 +732,10 @@ textarea {
     font-weight: 800;
     border-radius: 20px;
     /* box-shadow: rgb(0 0 0 / 15%) 0px 0px 0px 1px; */
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgb(182 182 182 / 20%) 0px 1px 6px 1px;
 }
+
 
 textarea::placeholder{
     color: black;
