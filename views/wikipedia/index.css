@@ -79,7 +79,7 @@ header button {
 }
 
 
-.wiki-main-container{
+.wiki-main-container {
     margin-top: 82px;
 }
 
@@ -342,13 +342,18 @@ h4 {
 }
 
 p {
-    font-size: 13px;
+    font-size: 17px;
     font-family: 'Josefin Sans', sans-serif;
     margin: 8px 0px;
-    line-height: 16px;
+    line-height: 21px;
     text-align: justify;
 }
 
+h3, h4, h5{
+    margin-top: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
 
 footer {
     margin-top: 5px;
@@ -419,27 +424,56 @@ footer p {
     padding: 0px 10px;
 }
 
-.intro-text-top img{
+.intro-text-top img {
     width: 50px;
     height: 50px;
     object-fit: cover;
     margin: auto;
 }
 
-.intro-text-top img {
-    width: 94px;
-    height: 94px;
+.wiki-main-container img{
+    width: 100%;
+    height: 355px;
     object-fit: cover;
-    margin: auto;
-    margin-top: 34px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
 }
+
+.wikipedia-article-summary{
+    font-size: 13px;
+    color: #2a2a2a;
+}
+
+
+
 
 @media (max-width: 600px) {
 
-    
-.wiki-main-container{
-    margin-top: 62px;
-}
+    p {
+        font-size: 17px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 8px 0px;
+        line-height: 17px;
+        text-align: justify;
+    }
+
+    .wiki-main-container img {
+        width: 97%;
+        height: 324px;
+        margin: auto;
+        display: block;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-top: 14px;
+        margin-bottom: 18px;
+    }
+
+    .wiki-main-container {
+        margin-top: 62px;
+    }
 
     .intro-text-top img {
         width: 68px;
@@ -543,8 +577,10 @@ footer p {
 
 
     h1 {
-        font-size: 15px;
-    }
+
+        font-size: 28px;
+        padding-left: 12px;
+        margin-top: 16px;    }
 
     h3 {
         font-size: 15px;
@@ -672,15 +708,19 @@ footer p {
         margin-right: -4px;
     }
 
-    p {
-        padding: 0px 10px;
-    }
+   p {
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 12px 12px;
+    line-height: 17px;
+    text-align: justify;
+}
 
     h2,
     h3,
     h4,
     h5 {
-        margin-left: 16px;
+        margin: 24px 10px 5px 10px;
     }
 
     .wikipedia-container {

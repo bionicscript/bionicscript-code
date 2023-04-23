@@ -31,11 +31,18 @@ router.get("/autocomplete", (req, res) => {
 
 router.get("/", (req, res) => {
 
+  wikipedia.default.summary(req.query.search).then((summary)=>{
+
+    const articleImage = `<img src="${summary.originalimage.source}">`
+    const articleHeading = `<h1>${summary.titles.canonical}</h1>`
+    const articleDescription = `<p >${summary.description}</p>`
+    const articleSummary = `<p class='wikipedia-article-summary'>${summary.extract}</p>`
+    const articleIntro =  articleHeading + articleDescription + articleSummary + articleImage
+
+
+
+
     wikipedia.default.content(req.query.search).then((summary) => {
-
-        console.log(summary);
-
-
         var mapedarray = String(summary).split(" ").map((string, index) => {
 
             var string = string
@@ -64,9 +71,6 @@ router.get("/", (req, res) => {
         var QuintupleEqualTO = 0
         var continueCompliling = true
         var finalarray2 = finlaArray.map((string, index, array) => {
-
-
-
 
             if (index == 0) {
                 return `<p>${string}`
@@ -127,27 +131,24 @@ router.get("/", (req, res) => {
             }
         })
 
-
-        // res.send(finlaArray)
-
-
         var html = ''
 
         finalarray2.forEach((string) => {
             html = html + string + " "
         })
 
-
         res.render(`${__dirname}/index.hbs`, {
+            articleSummary: articleIntro,
             content: html
         })
-
 
     }).catch((err) => {
         console.log(err);
     })
+  }).catch((err)=>{
+    console.log(err);
+  })
 
-    console.log(req.query);
 })
 
 
