@@ -15,7 +15,7 @@ router.get("/autocomplete", (req, res) => {
         let suuggestionKeywords = ``
         suggestions.forEach((value) => {
             suuggestionKeywords = suuggestionKeywords + `
-            <p onclick="selectWikipediaSearchSuggestion('${value}')">
+            <p onclick="selectWikipediaSearchSuggestion('${value}');searchWikipedia()">
             <span class="fa fa-search"></span> ${value}
            </p>
             `

@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wikipedia </title>
+    <title>Bionic Reading Converter</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="/wikipedia/index.css">
     <meta name="description"
-        content="">
+        content="Bionic Reading converter helps you in bionic reading which is a new way to fast ready and makes reading much more convenient for everyone using this bionic reading tool to convert plain text to bionic text online for free">
     <link rel="icon" href="/assets/bionic-script-logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,25 +17,21 @@
 
     <div class="all-content-container">
         <header>
-            <span class="site-title" style="font-family: 'Josefin Sans', sans-serif;">
-                <img src="/assets/bionic-script-logo.png" alt="site title">
-                <span ><b>Bionic</b><span>Script</span></span>
-            </span>
-            <!-- <span class="options">
-                <button>Download</button>
-            </span> -->
+         <button>
+            <span class="fa fa-arrow-left"></span>
+         </button>
         </header>
-        <div class="wikipedia-content-container">
-            {{{content}}}
 
-        </div>.
+<div class="wiki-main-container">
+{{{content}}}
 
-    
-       
-    <script src="/wikipedia/index.js"></script>
+</div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
     <footer>
         <p>
-        Copyright © 2023 BionicScript. All rights reserved.
+            Copyright © 2023 BionicScript. All rights reserved.
 
         </p>
     </footer>

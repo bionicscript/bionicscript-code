@@ -705,5 +705,7 @@ textarea {
     color: black;
     width: calc(100% - 15px);
 
-    box-shadow: rgb(0 0 0 / 15%) 0px 0px 0px 1px;
+    border-radius: 20px;
+    /* box-shadow: rgb(0 0 0 / 15%) 0px 0px 0px 1px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
