@@ -42,8 +42,8 @@ router.get("/", (req, res) => {
 
 
 
-    wikipedia.default.content(req.query.search).then((summary) => {
-        var mapedarray = String(summary).split(" ").map((string, index) => {
+    wikipedia.default.content(req.query.search).then((content) => {
+        var mapedarray = String(content).split(" ").map((string, index) => {
 
             var string = string
 
@@ -138,6 +138,8 @@ router.get("/", (req, res) => {
         })
 
         res.render(`${__dirname}/index.hbs`, {
+            title: summary.titles.normalized + " | Bionic Text",
+            description: summary.extract,
             articleSummary: articleIntro,
             content: html
         })

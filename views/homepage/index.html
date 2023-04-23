@@ -28,7 +28,27 @@
 
 
         <form action="/bionic" method="post">
-
+            <div class="card-continer wikipedia-container">
+                <div class="intro-text-top">
+                    <img src="/assets/wikipedia-icon.png">
+                    <h2 style="background-color: black;color: black;">
+                        Convert Wikipedia To Bionic Text
+                    </h2>
+                    <p>
+                        A seamless way to convert any Wikipedia page into bionic text, allowing you to read and explore
+                        articles in a more interactive and immersive way. </p>
+                </div>
+                <div class="wikipedia-search-container">
+    
+                    <input type="text" id="wikipedia-search" maxlength="100" placeholder="Search wikipedia for article"
+                        name="wikipedia-search">
+                    <button type="button" onclick="searchWikipedia()">
+                        <span class="fa fa-search"></span>
+                    </button>
+                </div>
+                <div class="wikipedia-autocomplete-container" id="wikipedia-autocomplete-container"></div>
+    
+            </div>
             <div class="card-continer">
                 <img class="card-container-image" src="/assets/bionic-script-backgound-image.webp">
                 <div class="intro-text-top">
@@ -59,27 +79,7 @@
 
         </form>
         <br>
-        <div class="card-continer wikipedia-container">
-            <div class="intro-text-top">
-                <img src="/assets/wikipedia-icon.png">
-                <h2 style="background-color: black;color: black;">
-                    Convert Wikipedia To Bionic Text
-                </h2>
-                <p>
-                    A seamless way to convert any Wikipedia page into bionic text, allowing you to read and explore
-                    articles in a more interactive and immersive way. </p>
-            </div>
-            <div class="wikipedia-search-container">
-
-                <input type="text" id="wikipedia-search" maxlength="100" placeholder="Search wikipedia for article"
-                    name="wikipedia-search">
-                <button type="button" onclick="searchWikipedia()">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-            <div class="wikipedia-autocomplete-container" id="wikipedia-autocomplete-container"></div>
-
-        </div>
+   
         <br>
         <p>
             Many students and professionals struggle with reading. Whether it's keeping up with coursework or staying

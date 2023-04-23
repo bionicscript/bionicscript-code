@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bionic Reading Converter</title>
+    <title>{{{title}}}</title>
     <link rel="stylesheet" href="./index.css">
     <meta name="description"
-        content="Bionic Reading converter helps you in bionic reading which is a new way to fast ready and makes reading much more convenient for everyone using this bionic reading tool to convert plain text to bionic text online for free">
+        content="{{{description}}}">
     <link rel="icon" href="/assets/bionic-script-logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,16 +17,14 @@
 
     <div class="all-content-container">
         <header>
-            <button>
+            <button onclick="window.location = '/'">
                 <span class="fa fa-arrow-left"></span>
             </button>
         </header>
 
         <div class="wiki-main-container">
                 {{{articleSummary}}}
-
-            {{{content}}}
-
+                {{{content}}}
         </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>

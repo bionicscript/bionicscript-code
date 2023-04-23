@@ -444,7 +444,9 @@ footer p {
 
 .wikipedia-article-summary{
     font-size: 13px;
+    border-left: 2px solid;
     color: #2a2a2a;
+    padding: 9px;
 }
 
 
