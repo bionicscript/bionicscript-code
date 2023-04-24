@@ -10,12 +10,12 @@ span {
     padding: 0%;
     margin: 0%;
     box-sizing: border-Fbox;
-
 }
 
-button{
+button {
     cursor: pointer;
 }
+
 .all-content-container {
     width: 70vw;
     min-height: 100vh;
@@ -159,7 +159,7 @@ textarea::-webkit-scrollbar-thumb {
     margin-bottom: 10px;
 }
 
-.card-continer textarea{
+.card-continer textarea {
     width: calc(100% - 39px);
 }
 
@@ -228,10 +228,10 @@ textarea::-webkit-scrollbar-thumb {
 
     font-family: 'Josefin Sans', sans-serif;
     background: black;
-    padding: 8px 23px;
+    padding: 10px 23px;
     color: white;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.366) 0px 1px 4px;
     border-radius: 4px;
     margin-left: 12px;
 }
@@ -438,7 +438,7 @@ footer p {
     padding: 0px 10px;
 }
 
-.intro-text-top img{
+.intro-text-top img {
     width: 50px;
     height: 50px;
     object-fit: cover;
@@ -460,7 +460,8 @@ footer p {
     width: 84px;
     object-fit: cover;
 }
-hr{
+
+hr {
     width: 172px;
     display: block;
     margin: 14px auto 10px auto;
@@ -671,14 +672,13 @@ hr{
         background: black;
         padding: 8px 16px;
         color: white;
-        border: none;
+        border: 2px solid black;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         border-radius: 4px;
 
 
 
     }
-
 
     .form-option-button button:nth-child(1) {
         font-size: 15px;
@@ -709,7 +709,7 @@ hr{
         font-family: 'Josefin Sans', sans-serif;
         margin-left: -31px;
         margin-right: -4px;
-    
+
     }
 
     p {
@@ -752,7 +752,7 @@ textarea {
 }
 
 
-textarea::placeholder{
+textarea::placeholder {
     color: black;
     font-weight: 800;
 }

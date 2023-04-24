@@ -18,4 +18,12 @@ function searchWikipedia() {
     }
 }
 
+document.getElementById("wikipedia-search").addEventListener("keydown", (event)=>{
+    if (event.key === "Enter") {
+        window.location = window.location + "wikipedia/?search=" + document.getElementById("wikipedia-search").value
+      }
+})
+
+
+
 // var socket = io()
