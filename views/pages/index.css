@@ -9,6 +9,7 @@ span {
     font-weight: 400;
 }
 
+
 * {
     padding: 0%;
     margin: 0%;
@@ -25,7 +26,6 @@ span {
     display: flex;
     margin: auto;
     flex-direction: column;
-    justify-content: center;
     box-sizing: border-box;
 
 }
@@ -191,7 +191,7 @@ margin-top: 105px;
 
 footer p {
     text-align: 10px;
-    width: 97vw;
+    width: 95vw;
     text-align: center;
 }
 
@@ -200,6 +200,8 @@ footer{
     flex-direction: column;
     height: 90px;
     box-sizing: border-box;
+    padding-bottom: 35px;
+
 }
 
 footer a{
@@ -210,6 +212,12 @@ footer a{
 }
 
 
+h2, h3, h4, h5 {
+    margin-top: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-left: 2px solid;
+    padding-left: 10px;
+}
 
 @media (max-width: 600px) {
 

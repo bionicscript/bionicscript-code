@@ -61,7 +61,7 @@ header {
 header button {
 
     border: none;
-    padding: 13px 15px;
+    padding: 14px 15px;
     background: black;
     color: white;
     font-weight: 800;
@@ -187,6 +187,34 @@ margin-top: 105px;
 }
 
 
+footer p {
+    text-align: 10px;
+    width: 97vw;
+    text-align: center;
+}
+
+footer{
+    padding: 5px;
+    flex-direction: column;
+    height: 90px;
+    box-sizing: border-box;
+}
+
+footer a{
+    display: inline-block;
+    margin: 3px;
+    color: black;
+    text-decoration: none;
+}
+
+
+h2, h3, h4, h5 {
+    margin-top: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-left: 2px solid;
+    padding-left: 10px;
+}
+
 @media (max-width: 600px) {
 
     .wiki-main-container{
@@ -281,7 +309,7 @@ margin-top: 105px;
 
     header button {
         border: none;
-        padding: 11px 12px;
+        padding: 12px 12px;
         font-size: 14px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         letter-spacing: 1px;

@@ -463,10 +463,26 @@ hr {
     margin: 14px auto 10px auto;
     border: 1px solid #cccccc;
 }
+
+
 footer p {
     text-align: 10px;
-    width: 100vw;
+    width: 97vw;
     text-align: center;
+}
+
+footer{
+    padding: 5px;
+    flex-direction: column;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+footer a{
+    display: inline-block;
+    margin: 3px;
+    color: black;
+    text-decoration: none;
 }
 
 

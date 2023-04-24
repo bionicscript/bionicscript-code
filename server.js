@@ -12,7 +12,7 @@ const assetsRouter = require('./assets/server')
 const homepageRouter = require("./views/homepage/server")
 const bionicRouter = require("./views/bionic/server")
 const wikipediaRouter = require("./views/wikipedia/server")
-
+const pagesRouter = require("./views/pages/server")
 
 app.set('view engine', 'hbs');
 
@@ -23,6 +23,8 @@ app.use("/", homepageRouter)
 app.use("/assets", assetsRouter)
 app.use("/bionic", bionicRouter)
 app.use("/wikipedia", wikipediaRouter)
+app.use("/p", pagesRouter)
+
 
 server.listen(PORT, ()=>{
     console.log(`server is live at ${PORT}`)
