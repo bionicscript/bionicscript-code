@@ -25,12 +25,12 @@ app.use("/bionic", bionicRouter)
 app.use("/wikipedia", wikipediaRouter)
 app.use("/p", pagesRouter)
 
-app.get("/s/sitemap.xml", (req, res)=>{
-    res.sendFile(`${__dirname}/sitemap.xml`)
+app.get("/s/sitemap3.xml", (req, res)=>{
+    res.sendFile(`${__dirname}/sitemap3.xml`)
 })
 
-app.get("/s/sitemap1.xml", (req, res)=>{
-    res.sendFile(`${__dirname}/sitemap1.xml`)
+app.get("/s/sitemap4.xml", (req, res)=>{
+    res.sendFile(`${__dirname}/sitemap4.xml`)
 })
 
 server.listen(PORT, ()=>{
