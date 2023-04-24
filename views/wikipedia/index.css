@@ -227,7 +227,7 @@ footer a{
 
     .wiki-main-container img {
         width: 97%;
-        height: 324px;
+        min-height: 320px;
         margin: auto;
         display: block;
         object-fit: contain;
