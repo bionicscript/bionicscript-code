@@ -30,7 +30,6 @@ router.post("/", (req, res) => {
         content = content + string + " "
     })
 
-    console.log(content);
 
     const bionicText = content.split(" ").map((string)=>{
         if (string.length % 2 == 0 && string.includes('<p>') == false && string.includes('</p><h2>') == false && string.includes('</h2><p>') == false && string.includes('<p><h3>') == false && string.includes('</h3><p>') == false && string.includes('</p><h4>') == false && string.includes('</h4><p>') == false && string.includes('</p><h5>') == false && string.includes('</h5><p>') == false  && string.includes('</p>') == false) {
