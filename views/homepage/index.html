@@ -27,30 +27,31 @@
         </header>
 
 
-            <div class="card-continer wikipedia-container">
-                <div class="intro-text-top">
-                    <img src="/assets/wikipedia-icon.png">
-                    <h2 style="background-color: black;color: black;">
-                        Convert Wikipedia To Bionic Text
-                    </h2>
-                    <p>
-                        A seamless way to convert any Wikipedia page into bionic text, allowing you to read and explore
-                        articles in a more interactive and immersive way. </p>
-                </div>
-                <hr>
-
-                <div class="wikipedia-search-container">
-
-                    <input type="text" id="wikipedia-search" maxlength="100" placeholder="Search wikipedia for article" autocomplete="off">
-                    <button type="button" onclick="searchWikipedia()">
-                        <span class="fa fa-search"></span>
-                    </button>
-                </div>
-
-                <div class="wikipedia-autocomplete-container" id="wikipedia-autocomplete-container"></div>
-
+        <div class="card-continer wikipedia-container">
+            <div class="intro-text-top">
+                <img src="/assets/wikipedia-icon.png">
+                <h2 style="background-color: black;color: black;">
+                    Convert Wikipedia To Bionic Text
+                </h2>
+                <p>
+                    A seamless way to convert any Wikipedia page into bionic text, allowing you to read and explore
+                    articles in a more interactive and immersive way. </p>
             </div>
-            <br>
+            <hr>
+
+            <div class="wikipedia-search-container">
+
+                <input type="text" id="wikipedia-search" maxlength="100" placeholder="Search wikipedia for article"
+                    autocomplete="off">
+                <button type="button" onclick="searchWikipedia()">
+                    <span class="fa fa-search"></span>
+                </button>
+            </div>
+
+            <div class="wikipedia-autocomplete-container" id="wikipedia-autocomplete-container"></div>
+
+        </div>
+        <br>
         <form action="/bionic" method="post">
 
             <div class="card-continer">
@@ -212,8 +213,16 @@
         </p>
 
     </div>
-    <script src="/socket.io/socket.io.js"></script>
     <script src="index.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TC0XEXZ2J0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TC0XEXZ2J0');
+    </script>
     <footer>
         <p>
             Copyright © 2023 BionicScript. All rights reserved.
