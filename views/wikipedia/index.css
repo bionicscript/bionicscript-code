@@ -211,6 +211,7 @@ footer a{
 
 
 
+
 @media (max-width: 600px) {
 
     .wiki-main-container{
@@ -227,7 +228,7 @@ footer a{
 
     .wiki-main-container img {
         width: 97%;
-        min-height: 320px;
+        min-height: 235px;
         margin: auto;
         display: block;
         object-fit: contain;
@@ -397,3 +398,5 @@ footer a{
 
 
 }
+
+
