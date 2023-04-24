@@ -29,6 +29,9 @@ app.get("/s/sitemap.xml", (req, res)=>{
     res.sendFile(`${__dirname}/sitemap.xml`)
 })
 
+app.get("/s/sitemap1.xml", (req, res)=>{
+    res.sendFile(`${__dirname}/sitemap1.xml`)
+})
 
 server.listen(PORT, ()=>{
     console.log(`server is live at ${PORT}`)
