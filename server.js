@@ -25,6 +25,10 @@ app.use("/bionic", bionicRouter)
 app.use("/wikipedia", wikipediaRouter)
 app.use("/p", pagesRouter)
 
+app.get("/s/sitemap.xml", (req, res)=>{
+    res.sendFile(`${__dirname}/sitemap.xml`)
+})
+
 
 server.listen(PORT, ()=>{
     console.log(`server is live at ${PORT}`)
