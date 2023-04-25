@@ -17,9 +17,10 @@ span {
 
 }
 
-.bioic-bold{
+.bioic-bold {
     font-weight: 600;
 }
+
 .all-content-container {
     width: 70vw;
     min-height: 100vh;
@@ -141,7 +142,10 @@ p {
     text-align: justify;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     margin-top: 25px;
     font-family: 'Josefin Sans', sans-serif;
     border-left: 2px solid;
@@ -159,13 +163,16 @@ footer {
 
 footer p {
     text-align: 10px;
-    width: 100vw;
+    width: calc(100vw - 51px);
+
     text-align: center;
 }
+
 .intro-text-top p {
     padding: 0px 10px;
 }
-.wiki-main-container img{
+
+.wiki-main-container img {
     width: 100%;
     min-height: 400px;
     object-fit: cover;
@@ -175,40 +182,38 @@ footer p {
 
 }
 
-.wikipedia-article-summary{
+.wikipedia-article-summary {
     font-size: 13px;
     border-left: 2px solid;
     color: #2a2a2a;
     padding: 9px;
 }
 
-.wiki-main-container{
-margin-top: 105px;
+.wiki-main-container {
+    margin-top: 105px;
 }
 
 
-footer p {
-    text-align: 10px;
-    width: 97vw;
-    text-align: center;
-}
-
-footer{
+footer {
     padding: 5px;
     flex-direction: column;
     height: 90px;
     box-sizing: border-box;
 }
 
-footer a{
+footer a {
     display: inline-block;
     margin: 3px;
+    font-size: 9px;
     color: black;
     text-decoration: none;
 }
 
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     margin-top: 25px;
     font-family: 'Josefin Sans', sans-serif;
     border-left: 2px solid;
@@ -217,7 +222,7 @@ h2, h3, h4, h5 {
 
 @media (max-width: 600px) {
 
-    .wiki-main-container{
+    .wiki-main-container {
         margin-top: 60px;
     }
 
@@ -309,7 +314,7 @@ h2, h3, h4, h5 {
 
     header button {
         border: none;
-        padding: 12px 12px;
+        padding: 11px 12px;
         font-size: 14px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         letter-spacing: 1px;
@@ -317,13 +322,12 @@ h2, h3, h4, h5 {
         margin-left: 8px;
     }
 
-
-
     h1 {
 
         font-size: 28px;
         padding-left: 12px;
-        margin-top: 16px;    }
+        margin-top: 16px;
+    }
 
     h3 {
         font-size: 15px;
@@ -377,15 +381,15 @@ h2, h3, h4, h5 {
         height: 27px;
     }
 
-  
 
-   p {
-    font-size: 13px;
-    font-family: 'Josefin Sans', sans-serif;
-    margin: 12px 12px;
-    line-height: 18px;
-    text-align: justify;
-}
+
+    p {
+        font-size: 13px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 12px 12px;
+        line-height: 18px;
+        text-align: justify;
+    }
 
     h2,
     h3,

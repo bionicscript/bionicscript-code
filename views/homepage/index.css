@@ -467,7 +467,7 @@ hr {
 
 footer p {
     text-align: 10px;
-    width: 97vw;
+    width: calc(100vw - 51px);
     text-align: center;
 }
 
@@ -481,6 +481,7 @@ footer{
 footer a{
     display: inline-block;
     margin: 3px;
+    font-size: 9px;
     color: black;
     text-decoration: none;
 }
