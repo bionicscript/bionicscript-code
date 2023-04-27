@@ -360,7 +360,7 @@ h4 {
 }
 
 p {
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'Josefin Sans', sans-serif;
     margin: 8px 0px;
     line-height: 16px;
@@ -471,14 +471,14 @@ footer p {
     text-align: center;
 }
 
-footer{
+footer {
     padding: 5px;
     flex-direction: column;
     height: 70px;
     box-sizing: border-box;
 }
 
-footer a{
+footer a {
     display: inline-block;
     margin: 3px;
     font-size: 9px;
