@@ -1,17 +1,18 @@
 const express = require("express")
-const Router = express.Router()
+const router = express.Router()
 
-Router.get("/", (req, res)=>{
+router.get("/", (req, res)=>{
     res.sendFile(`${__dirname}/index.html`)
 })
 
-Router.get("/index.css", (req, res)=>{
+router.get("/index.css", (req, res)=>{
     res.sendFile(`${__dirname}/index.css`)
 })
 
-Router.get("/index.js", (req, res)=>{
+router.get("/index.js", (req, res)=>{
     res.sendFile(`${__dirname}/index.js`)
 })
 
 
-module.exports = Router
+
+module.exports = router

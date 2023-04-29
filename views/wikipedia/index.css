@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+
+
+span {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+.bioic-bold{
+    font-weight: 600;
+}
+.all-content-container {
+    width: 70vw;
+    min-height: 100vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+input::placeholder {
+    color: black;
+}
+
+.all-content-container::-webkit-scrollbar {
+    display: none;
+}
+
+.main-container {
+    width: 70%;
+}
+
+header {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    position: fixed;
+    padding-top: 0px;
+    top: 0px;
+    background-color: white;
+    border-bottom: 3px solid #e3e3e373;
+    backdrop-filter: blur(5px);
+
+}
+
+
+header button {
+
+    border: none;
+    padding: 14px 15px;
+    background: black;
+    color: white;
+    font-weight: 800;
+    border-radius: 32px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    letter-spacing: 1px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 2px;
+
+}
+
+.card-continer {
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 16px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    padding-bottom: 20px;
+}
+
+
+.card-continer h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 22px;
+    margin: 20px 0px 7px 7px;
+}
+
+
+.card-continer h3 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 16px;
+    margin: 20px 0px 7px 10px;
+}
+
+
+.card-continer h5 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 13px;
+    margin: 20px 0px 7px 10px;
+}
+
+.top-header {
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 18px 0px 1px;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 19px 10px 0px 0px;
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 8px 0px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+h2, h3, h4, h5 {
+    margin-top: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-left: 2px solid;
+    padding-left: 10px;
+}
+
+footer {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    height: 50px;
+    background-color: #e2e2e2;
+}
+
+footer p {
+    text-align: 10px;
+    width: calc(100vw - 41px);
+    text-align: center;
+}
+.intro-text-top p {
+    padding: 0px 10px;
+}
+.wiki-main-container img{
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.wikipedia-article-summary{
+    font-size: 13px;
+    border-left: 2px solid;
+    color: #2a2a2a;
+    padding: 9px;
+}
+
+.wiki-main-container{
+margin-top: 105px;
+}
+
+
+
+
+footer p {
+    text-align: 10px;
+    text-align: center;
+}
+
+footer{
+    padding: 5px;
+    flex-direction: column;
+    height: 90px;
+    box-sizing: border-box;
+}
+
+footer a{
+    display: inline-block;
+    margin: 3px;
+font-size: 9px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .wiki-main-container{
+        margin-top: 60px;
+    }
+
+    p {
+        font-size: 17px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 8px 0px;
+        line-height: 17px;
+        text-align: justify;
+    }
+
+    .wiki-main-container img {
+        width: 97%;
+        min-height: 235px;
+        margin: auto;
+        display: block;
+        object-fit: contain;
+        border-radius: 6px;
+        margin-top: 14px;
+        margin-bottom: 18px;
+    }
+
+    .wiki-main-container {
+        margin-top: 62px;
+    }
+
+    .intro-text-top img {
+        width: 68px;
+        height: 68px;
+        object-fit: cover;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: -11px;
+    }
+
+    .card-continer:nth-child(1) {
+        margin-top: 59px;
+    }
+
+
+
+    .intro-text-top {
+        margin-top: -8px;
+    }
+
+    header span {
+        font-size: 18px;
+    }
+
+
+
+    .wikipedia-container {
+        margin-top: 5px;
+    }
+
+
+    .all-content-container {
+        width: 100%;
+    }
+
+    header {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 52px;
+        position: fixed;
+        padding-top: 0px;
+        top: 0px;
+        background-color: white;
+        backdrop-filter: blur(5px);
+    }
+
+    header .site-title {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+
+    header .site-title img {
+        display: inline-block;
+        margin-right: 13px;
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+    }
+
+    header button {
+        border: none;
+        padding: 11px 12px;
+        font-size: 14px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        letter-spacing: 1px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-left: 8px;
+    }
+
+
+
+    h1 {
+
+        font-size: 28px;
+        padding-left: 12px;
+        margin-top: 16px;    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .card-continer h1 {
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 18px;
+        margin: 3px 0px 7px 7px;
+    }
+
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .description-conatiner textarea {
+        display: block;
+        color: black;
+
+        height: 85px;
+        user-select: none;
+        background-color: white;
+        font-family: 'Open Sans', sans-serif;
+        outline: none;
+        box-sizing: border-box;
+        resize: none;
+        padding: 20px 9px 19px 15px;
+        border: none;
+        font-size: 13px;
+        border-radius: 4px;
+        width: calc(100% - 15px);
+
+
+    }
+
+    .card-continer h3 {
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 14px;
+        margin: 20px 0px 7px 10px;
+    }
+
+
+
+
+
+
+
+    .wikipedia-search-container .wikipedia-icon {
+        width: 29px;
+        height: 27px;
+    }
+
+  
+
+   p {
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 12px 12px;
+    line-height: 18px;
+    text-align: justify;
+}
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 24px 10px 5px 10px;
+    }
+
+    .wikipedia-container {
+        margin-top: 5px;
+        margin: -6px 7px;
+    }
+
+
+}
+
+

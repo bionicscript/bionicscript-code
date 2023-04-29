@@ -1,12 +1,38 @@
 const express = require("express")
 const app = express()
-const homepageRouter = require("./views/homepage/server")
+const bodyParser = require("body-parser")
+const http = require('http');
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io = new Server(server);
 const PORT = process.env.PORT || 3001
 
-app.use(express.json())
+
+const assetsRouter = require('./assets/server')
+const homepageRouter = require("./views/homepage/server")
+const bionicRouter = require("./views/bionic/server")
+const wikipediaRouter = require("./views/wikipedia/server")
+const pagesRouter = require("./views/pages/server")
+
+app.set('view engine', 'hbs');
+
+
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use("/", homepageRouter)
+app.use("/assets", assetsRouter)
+app.use("/bionic", bionicRouter)
+app.use("/wikipedia", wikipediaRouter)
+app.use("/p", pagesRouter)
 
-app.listen(PORT, ()=>{
-    console.log(`server is live at ${PORT}`);
+app.get("/s/sitemap3.xml", (req, res)=>{
+    res.sendFile(`${__dirname}/sitemap3.xml`)
+})
+
+app.get("/s/sitemap4.xml", (req, res)=>{
+    res.sendFile(`${__dirname}/sitemap4.xml`)
+})
+
+server.listen(PORT, ()=>{
+    console.log(`server is live at ${PORT}`)
 })
